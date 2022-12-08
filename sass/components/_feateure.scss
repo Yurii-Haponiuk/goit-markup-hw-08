@@ -1,0 +1,29 @@
+.feateure {
+    padding-bottom: 0;
+    &__list {
+    display: flex;
+    }
+    &__icon {
+    padding: 25px 100px;
+    background:$background-white;
+    border-radius: 4px;
+    margin: 0 30px 30px 0;
+    }
+    &__icon:last-child {
+    margin-right: 0;
+    }
+    &__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+    &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color:$title-text-color;
+    }
+}
