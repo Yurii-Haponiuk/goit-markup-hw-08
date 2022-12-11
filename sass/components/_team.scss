@@ -4,19 +4,42 @@
     box-sizing: content-box;
     background:$background-white;
     &__list {
-        display: flex;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+            }
+        
     }
     &__item {
-    max-width: 270px;
+    // max-width: 450px;
+    
+        // max-width: 270px;
     text-align: center;
+    // margin-bottom: 30px;
 
     background:$background-white-two;
     box-shadow:$card-shadow;
     border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 4 * 30px) / 4);
+            margin: 15px;
+        }
     }
+    
     &__item:not(:last-child) {
-    margin-right: 30px;
+        @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        }
+ 
     }
+        
+
     &__text {
     margin: 10px 0 16px;
     font-size: 16px;
@@ -40,7 +63,8 @@
     &__item {
         width: 44px;
         height: 44px;
-        margin-bottom: 30px;
+        margin-bottom: 24px;
+        // margin-bottom: 30px;
         background-color:$background-white-two;
         margin-right: 10px;
     }

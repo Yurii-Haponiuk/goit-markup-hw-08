@@ -4,10 +4,18 @@
     background-color:$background-color-footer;
     &__container {
         text-align: center;
-        
+        @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        }
+        @media screen and (min-width: 1200px) {
+                        text-align: left;
+                }
+                
        
-        //     display: flex;
-            align-items: center;
+         
         //     justify-content: space-between;
 
         }
@@ -93,41 +101,74 @@
     margin-bottom: 20px;
 }
 .footer-form {
-//     margin-left: 93px;
+        flex-wrap: wrap;
+        
+//        
 }
 
 .form-mail {
+@media screen and (min-width: 1200px) {
+                display: flex;
+        }
+        // display: block;
+        // flex-direction: column;
 //     display: flex;
 }
 
 .form-mail {
-        width: ;
+ &__label{
+        margin-left: auto;
+ }    
+ &__input {
+width: 450px;
+justify-content: center;
+padding-left: 16px;
+ margin-bottom: 20px;
+@media screen and (min-width: 1200px) {
+                margin-bottom: 0;
+                width: 358px;
+}
+  height: 50px;
+font-size: 16px;
+line-height: 1.25;
+        
+        
+   letter-spacing: 0.03em;
+        
+   color: $background-white-two;
+        
+   outline: none;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+ border-radius: 4px;
+     background-color: $background-color-footer;
+        
+    }
+        
+&__input::placeholder {
+                        color: $footer-color-text;
+  }
+        // flex-wrap: wrap;
+      
+        
+
+        // display: block;
+//     margin-left: 93px;
+// justify-content: flex-end;
+ 
 .button {
-        // display: flex;
+        @media screen and (min-width: 768px) {
+        margin-left: auto;
+           margin-right: auto;
+          display: flex;
+                }
+      @media screen and (min-width: 1200px) {
+              margin-left: 12px;
+                          
+      }
+        
         fill: $text-color-white;
         // margin-left: 12px;
     }
-    &__input {
-            padding-left: 16px;
-            margin-bottom: 20px;
-            width:100%;
-            height: 50px;
-            font-size: 16px;
-            line-height: 1.25;
-
-    
-            letter-spacing: 0.03em;
-    
-            color:$background-white-two;
-    
-            outline: none;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            border-radius: 4px;
-            background-color:$background-color-footer;
-    
-    }
-    &__input::placeholder {
-            color:$footer-color-text;
-    }
+   
 }

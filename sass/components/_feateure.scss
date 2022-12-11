@@ -1,17 +1,49 @@
 .feateure {
-    padding-bottom: 0;
+        padding-bottom: 0;
+// width: 100%;
     &__list {
-    display: flex;
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+    
     }
+    &__item{
+       
+    
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 4 * 30px) / 4);
+            margin: 15px;
+        }
+    }
+    &__item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        }
+    }
+    
     &__icon {
-    padding: 25px 100px;
+       
+    
+    padding: 25px 190px;
     background:$background-white;
     border-radius: 4px;
-    margin: 0 30px 30px 0;
+    @media screen and (min-width: 768px) {
+                padding: 25px 142px;
+            }
+    // margin: 0 30px 30px 0;
     }
+    
     &__icon:last-child {
     margin-right: 0;
     }
+    
     &__title {
     margin-bottom: 10px;
     font-size: 14px;
