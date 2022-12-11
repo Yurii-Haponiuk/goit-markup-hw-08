@@ -1,4 +1,21 @@
 .header-nav {
     display: flex;
     align-items: center;
+    position: relative;
+}
+.menu-button {
+    display: inline-block;
+    margin: 0;
+    bottom: 0;
+    border: none;
+    background-color: transparent;
+}
+.menu-button .icon-close-m {
+    display: none;
+}
+.menu-button .is-open .icon-close-m {
+    display: block;
+}
+.menu-button .is-open .icon-menu {
+    display: none;
 }
