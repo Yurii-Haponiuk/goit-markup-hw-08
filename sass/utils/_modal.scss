@@ -14,12 +14,13 @@
 .modal {
     display: block;
     position: absolute;
-    padding: 40px;
+    // padding: 40px;
+    padding: 93px 15px 94px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-    max-width: 528px;
+    max-width: 450px;
     width: 100%;
 
     background-color: #ffffff;
@@ -46,9 +47,10 @@
         border: 1px solid $accent-color;
     }
     &__title {
+        width: 370px;
     margin-bottom: 12px;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     }    
@@ -137,6 +139,8 @@
 .checkbox-agree {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
     .icon-wrapper {
             width: 16px;
             height: 15px;
@@ -162,8 +166,10 @@
 }
 .contract {
     padding-left: 4px;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+        line-height: 1.17;
+    // font-size: 14px;
+    // line-height: 24px;
 
     letter-spacing: 0.03em;
     text-decoration-line: underline;

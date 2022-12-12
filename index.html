@@ -29,18 +29,32 @@
             <span class="logo__web">Web</span>
             <span class="logo__studio">Studio</span>
           </a>
-          <button type="button" class="menu-button is-open">
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            js-menu-container
+          >
             <svg
               class="mobile-nav__icon"
               width="40"
               height="40"
               aria-label="Перемикач мобільного меню"
             >
-              <use class="icon-close-m" href="./images/symbol-defs.svg#icon-close_m"></use>
-              <use class="icon-menu-m" href="./images/symbol-defs.svg#icon-menu_m"></use>
+              <use
+                js-close-menu
+                class="icon-close"
+                href="./images/symbol-defs.svg#icon-close_m"
+              ></use>
+              <use
+                js-open-menu
+                class="icon-menu-m"
+                href="./images/symbol-defs.svg#icon-menu_m"
+              ></use>
             </svg>
           </button>
-          <div class="menu-container">
+          <div class="menu-container" id="menu-container" js-menu-container>
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a class="site-nav__link link current" href="./index.html">Студія</a>
@@ -554,5 +568,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
