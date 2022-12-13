@@ -8,7 +8,7 @@
     }
     
     .menu-button {
-      display: inline-flex;
+    //   display: inline-flex;
     margin: 0;
         bottom: 0;
         border: none;
@@ -45,5 +45,10 @@
                 left: 0;
                 width: 100%;
         }
-            
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+    
+        }    
         }
