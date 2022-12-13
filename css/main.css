@@ -326,7 +326,13 @@ img {
   }
 }
 
+.header-nav {
+  position: relative;
+}
+
 .menu-button {
+  position: absolute;
+  right: 0;
   margin: 0;
   bottom: 0;
   border: none;
@@ -337,22 +343,20 @@ img {
     display: none;
   }
 }
-
 .menu-button .icon-close {
   display: none;
 }
-
-.menu-button .is-open .icon-close {
+.menu-button.is-open .icon-close {
   display: block;
 }
-
-.menu-button .is-open .icon-menu {
+.menu-button.is-open .icon-menu {
   display: none;
 }
 
-.menu-container.is-open {
-  display: block;
+.menu-button.icon-close {
+  display: none;
 }
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -360,6 +364,12 @@ img {
     top: 100%;
     left: 0;
     width: 100%;
+    text-align: center;
+    padding: 48px 40px;
+    background-color: red;
+  }
+  .menu-container .is-open {
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
@@ -390,6 +400,13 @@ img {
 }
 .logo__studio {
   color: #000000;
+}
+
+@media screen and (min-width: 0px) {
+  .heder-logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 .site-nav {

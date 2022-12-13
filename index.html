@@ -25,16 +25,15 @@
     <header>
       <div class="container header-nav">
         <nav class="">
-          <a href="./index.html" class="logo link">
+          <a href="./index.html" class="heder-logo logo link">
             <span class="logo__web">Web</span>
             <span class="logo__studio">Studio</span>
           </a>
           <button
             type="button"
-            class="menu-button"
+            class="menu-button js-menu-container"
             aria-expanded="false"
             aria-controls="menu-container"
-            js-menu-container
           >
             <svg
               class="mobile-nav__icon"
@@ -43,18 +42,13 @@
               aria-label="Перемикач мобільного меню"
             >
               <use
-                js-close-menu
-                class="icon-close"
+                class="icon-close js-close-menu"
                 href="./images/symbol-defs.svg#icon-close_m"
               ></use>
-              <use
-                js-open-menu
-                class="icon-menu-m"
-                href="./images/symbol-defs.svg#icon-menu_m"
-              ></use>
+              <use class="icon-menu js-open-menu" href="./images/symbol-defs.svg#icon-menu_m"></use>
             </svg>
           </button>
-          <div class="menu-container" id="menu-container" js-menu-container>
+          <div class="menu-container js-menu-container" id="menu-container">
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a class="site-nav__link link current" href="./index.html">Студія</a>
@@ -85,8 +79,6 @@
           </div>
         </nav>
       </div>
-
-      <div class="menu-container">меню</div>
     </header>
     <main>
       <!-- Герой -->
