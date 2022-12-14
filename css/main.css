@@ -310,7 +310,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
   }
@@ -516,6 +516,9 @@ img {
         flex-wrap: wrap;
     margin: -15px;
   }
+}
+.feateure__item {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .feateure__item {
