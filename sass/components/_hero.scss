@@ -1,36 +1,63 @@
 /* Hero */
 .hero {
-   
-    text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    margin: 0 auto;
+  text-align: center;
+
+  margin: 0 auto;
+  // Mobile screen
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero/imgbg-mob@1x.webp);
+
+  // retina mobile screen
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg.jpg);
-        background-size: cover;
-    background-color:$background-hero;
-    @media screen and (min-width: 1200px) {
-        max-width: 1600px;
-        // padding: 200px 0;
-        }
-    &__title {
-        max-width: 696px;
-        margin: 0 auto 30px;
+      url(../images/Hero/imgbg-mob@2x.webp);
+  }
 
-        color:$text-color-white;
+  background-color: $background-hero;
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Hero/imgbg-tab@1x.webp);
 
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.62;
-      
-           
-         @media screen and (min-width: 1200px) {
-            font-size: 44px;
-            line-height: 1.36;
-            }
-        
-
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
+    // retina tablet screen
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/Hero/imgbg-tab@2x.webp);
     }
-}
+  }
+  // Desktop screen
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Hero/imgbg-desk@1x.webp);
+    max-width: 1600px;
+    // padding: 200px 0;
+    // retina tablet screen
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/Hero/imgbg-desk@2x.webp);
+      max-width: 1600px;
+    }
+  }
+  &__title {
+    max-width: 696px;
+    margin: 0 auto 30px;
 
+    color: $text-color-white;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
