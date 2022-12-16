@@ -24,7 +24,7 @@
     <!--Шапка сайта-->
     <header>
       <div class="container header-nav">
-        <nav class="">
+        <nav class="nav">
           <a href="./index.html" class="heder-logo logo link">
             <span class="logo__web">Web</span>
             <span class="logo__studio">Studio</span>
@@ -35,39 +35,15 @@
             aria-controls="mobile-menu"
           >
             <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <!-- <button
-            type="button"
-            class="menu-button js-menu-container"
-            aria-expanded="false"
-            aria-controls="menu-container"
-          >
-            <svg
               class="mobile-nav__icon"
               width="40"
               height="40"
               aria-label="Перемикач мобільного меню"
             >
-              <use
-                class="icon-close js-close-menu"
-                href="./images/symbol-defs.svg#icon-close_m"
-              ></use>
-              <use class="icon-menu js-open-menu" href="./images/symbol-defs.svg#icon-menu_m"></use>
+              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_m"></use>
             </svg>
-          </button> -->
-          <!-- <div class="menu-container js-menu-container" id="menu-container"> -->
+          </button>
+
           <ul class="site-nav">
             <li class="site-nav__item">
               <a class="site-nav__link link current" href="./index.html">Студія</a>
@@ -95,7 +71,6 @@
               >
             </li>
           </ul>
-          <!-- </div> -->
         </nav>
       </div>
     </header>
@@ -243,30 +218,36 @@
             <li class="work__item">
               <img
                 class="work__link link"
-                src="./images/desktop-applications.jpg"
+                srcset="./images/work/imgdesk_370.webp 1x, ./images/work/imgdesk_740.webp 2x"
+                src="./images/work/imgdesk_370.webp"
                 alt="десктопні додатки"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="work__info">Десктопні додатки</p>
             </li>
             <li class="work__item">
               <img
                 class="work__link link"
-                src="./images/mobile-applications.jpg"
+                srcset="./images/work/imgmob_370.webp 1x, ./images/work/imgmob_740.webp 2x"
+                src="./images/work/imgmob_370.webp"
                 alt="мобільні додатки"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="work__info">Мобільні додатки</p>
             </li>
             <li class="work__item">
               <img
                 class="work__link link"
-                src="./images/design-solutions.jpg"
+                srcset="./images/work/imgdez_370.webp 1x, ./images/work/imgdez_740.webp 2x"
+                src="./images/work/imgdez_370.webp"
                 alt="дизайнерські рішення"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="work__info">Дизайнерські рішення</p>
             </li>
@@ -281,9 +262,19 @@
             <li class="team__item">
               <img
                 class="team__img link"
-                src="./images/ihor.jpg"
+                srcset="
+                  ./images/team/img-ihor_270.webp 270w,
+                  ./images/team/img-ihor_354.webp 354w,
+                  ./images/team/img-ihor_450.webp 450w,
+                  ./images/team/img-ihor_540.webp 540w,
+                  ./images/team/img-ihor_708.webp 708w,
+                  ./images/team/img-ihor_900.webp 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width:
+              768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/img-ihor_450.webp"
                 alt="Ігор Дем'яненко"
-                width="450"
+                loading="lazy"
               />
               <h3 class="team__title">Ігор Дем'яненко</h3>
               <p class="team__text" lang="en">Product Designer</p>
@@ -319,8 +310,22 @@
               </ul>
             </li>
             <li class="team__item">
-              <img class="team__img link" src="./images/olga.jpg" alt="Ольга Рєпіна" width="450" />
-
+              <img
+                class="team__img link"
+                srcset="
+                  ./images/team/img-olga_270.webp 270w,
+                  ./images/team/img-olga_354.webp 354w,
+                  ./images/team/img-olga_450.webp 450w,
+                  ./images/team/img-olga_540.webp 540w,
+                  ./images/team/img-olga_708.webp 708w,
+                  ./images/team/img-olga_900.webp 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width:
+              768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/img-olga_450.webp"
+                alt="Ольга Рєпіна"
+                loading="lazy"
+              />
               <h3 class="team__title">Ольга Рєпіна</h3>
               <p class="team__text" lang="en">Frontend Developer</p>
               <ul class="social list">
@@ -357,11 +362,20 @@
             <li class="team__item">
               <img
                 class="team__img link"
-                src="./images/mykola.jpg"
+                srcset="
+                  ./images/team/img-mukola_270.webp 270w,
+                  ./images/team/img-mukola_354.webp 354w,
+                  ./images/team/img-mukola_450.webp 450w,
+                  ./images/team/img-mukola_540.webp 540w,
+                  ./images/team/img-mukola_708.webp 708w,
+                  ./images/team/img-mukola_900.webp 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width:
+              768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/img-mukola_450.webp"
                 alt="Микола Тарасов"
-                width="450"
+                loading="lazy"
               />
-
               <h3 class="team__title">Микола Тарасов</h3>
               <p class="team__text" lang="en">Marketing</p>
               <ul class="social list">
@@ -398,11 +412,20 @@
             <li class="team__item">
               <img
                 class="team__img link"
-                src="./images/mukhail.jpg"
+                srcset="
+                  ./images/team/img-muhajlo_270.webp 270w,
+                  ./images/team/img-muhajlo_354.webp 354w,
+                  ./images/team/img-muhajlo_450.webp 450w,
+                  ./images/team/img-muhajlo_540.webp 540w,
+                  ./images/team/img-muhajlo_708.webp 708w,
+                  ./images/team/img-muhajlo_900.webp 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width:
+              768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/img-muhajlo_450.webp"
                 alt="Михайло Єрмаков"
-                width="450"
+                loading="lazy"
               />
-
               <h3 class="team__title">Михайло Єрмаков</h3>
               <p class="team__text" lang="en">UI Designer</p>
               <ul class="social list">
@@ -494,23 +517,13 @@
     <!-- mobile-menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+        <svg class="mobile-nav__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="icon-close" href="./images/symbol-defs.svg#icon-close_m"></use>
         </svg>
       </button>
       <ul class="mobile-menu">
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link current" href="./index.html">Студія</a>
+          <a class="mobile-menu__link link" href="./index.html" style="color: #2196f3">Студія</a>
         </li>
         <li class="mobile-menu__item">
           <a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
@@ -519,28 +532,28 @@
       </ul>
       <ul class="mobiel-contacts">
         <li class="mobiel-contacts__item">
-          <a href="mailto:info@devstudio.com" class="mobiel-contacts__link link">
+          <a href="tel:+380961111111" class="mobiel-contacts__tel link"> +38 096 111 11 11</a>
+        </li>
+        <li class="mobiel-contacts__item">
+          <a href="mailto:info@devstudio.com" class="mobiel-contacts__mail link">
             info@devstudio.com</a
           >
         </li>
-        <li class="mobiel-contacts__item">
-          <a href="tel:+380961111111" class="mobiel-contacts__link link"> +38 096 111 11 11</a>
-        </li>
       </ul>
       <ul class="mobile-socials">
-        <li class="mobile-socials__item"><a href="" class="mobail-social__link">Instagram</a></li>
-        <li class="mobile-socials__item"><a href="" class="mobail-social__link">Twitter</a></li>
-        <li class="mobile-socials__item"><a href="" class="mobail-social__link">Facebook</a></li>
-        <li class="mobile-socials__item"><a href="" class="mobail-social__link">LinkedIn</a></li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobail-social__link link" style="color: #2196f3">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobail-social__link link" style="color: #2196f3">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobail-social__link link" style="color: #2196f3">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobail-social__link link" style="color: #2196f3">LinkedIn</a>
+        </li>
       </ul>
-
-      <!-- <ul class="mobile-menu">
-        
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul> -->
     </div>
     <footer class="footer">
       <div class="container footer__container">
@@ -630,7 +643,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
