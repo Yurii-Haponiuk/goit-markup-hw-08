@@ -32,10 +32,6 @@ img {
 }
 
 /* Section */
-.section {
-  padding: 94px 0;
-}
-
 .title-hide {
   pointer-events: none;
   position: absolute;
@@ -53,6 +49,11 @@ img {
 
 .section {
   padding: 60px 0;
+}
+@media screen and (min-width: 1199px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .section-title {
@@ -608,9 +609,6 @@ img {
   color: #757575;
 }
 
-.work {
-  padding-bottom: 94px;
-}
 @media screen and (max-width: 1199px) {
   .work {
     display: none;
