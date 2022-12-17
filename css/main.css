@@ -923,11 +923,9 @@ img {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__container {
-    text-align: left;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 .footer__logo {
@@ -954,9 +952,6 @@ img {
   color: #ffffff;
 }
 
-.footer-social {
-  padding: 60px 0;
-}
 .footer-social__list {
   display: -webkit-box;
   display: -ms-flexbox;

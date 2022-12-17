@@ -1,7 +1,9 @@
 /* Footer */
 .footer {
   max-width: 1600px;
+
   padding: 60px 0;
+
   background-color: $background-color-footer;
   &__container {
     text-align: center;
@@ -10,9 +12,7 @@
       align-items: center;
       flex-wrap: wrap;
       justify-content: space-evenly;
-    }
-    @media screen and (min-width: 1200px) {
-      text-align: left;
+      align-items: baseline;
     }
 
     //     justify-content: space-between;
@@ -45,9 +45,6 @@
 }
 
 .footer-social {
-  padding: 60px 0;
-  //     margin-left: 70px;
-
   &__list {
     display: flex;
 
