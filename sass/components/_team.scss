@@ -55,7 +55,10 @@
     width: 44px;
     height: 44px;
     margin-bottom: 24px;
-    // margin-bottom: 30px;
+    @media screen and (min-width: 1199px) {
+      margin-bottom: 30px;
+    }
+
     background-color: $background-white-two;
     margin-right: 10px;
   }

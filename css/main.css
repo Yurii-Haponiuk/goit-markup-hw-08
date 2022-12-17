@@ -708,6 +708,11 @@ img {
   background-color: #ffffff;
   margin-right: 10px;
 }
+@media screen and (min-width: 1199px) {
+  .social__item {
+    margin-bottom: 30px;
+  }
+}
 .social__item:last-child {
   margin-right: 0;
 }
