@@ -3,48 +3,54 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
 
-  margin: 0 auto;
+  // margin: 0 auto;
   // Mobile screen
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/Hero/imgbg-mob@1x.webp);
+    url(../images/Hero/imgbg-mob@1x.jpg);
 
   // retina mobile screen
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/Hero/imgbg-mob@2x.webp);
+      url(../images/Hero/imgbg-mob@2x.jpg);
   }
 
   background-color: $background-hero;
   // Tablet screen
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/Hero/imgbg-tab@1x.webp);
+      url(../images/Hero/imgbg-tab@1x.jpg);
 
     // retina tablet screen
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/Hero/imgbg-tab@2x.webp);
+        url(../images/Hero/imgbg-tab@2x.jpg);
     }
   }
   // Desktop screen
   @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/Hero/imgbg-desk@1x.webp);
+      url(../images/Hero/Imgbg-desk@1x.jpg);
+
     max-width: 1600px;
-    // padding: 200px 0;
-    // retina tablet screen
+
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      padding-top: 200px;
+      padding-bottom: 200px;
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/Hero/imgbg-desk@2x.webp);
+        url(../images/Hero/Imgbg-desk@2x.jpg);
       max-width: 1600px;
     }
   }
   &__title {
     max-width: 696px;
     margin: 0 auto 30px;
+    text-align: center;
 
     color: $text-color-white;
 

@@ -10,14 +10,15 @@
   }
 
   &__icon {
-    margin-right: 10px;
+    // margin-right: 10px;
     fill: currentColor;
   }
-  &__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+
   &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     color: $title-text-color;
     font-weight: 500;
     font-size: 14px;
